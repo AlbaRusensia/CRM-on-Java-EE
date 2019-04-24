@@ -1,0 +1,38 @@
+package com.example.crm.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.stereotype.Controller;
+
+import com.example.crm.model.Service;
+import com.example.crm.repository.ServiceRepository;
+
+@Controller
+public class CrmController {
+	@Autowired
+	private ServiceRepository serviceRepository;
+	
+
+	public void save() {
+		Service service= new Service();
+		service.setServiceName("Парикмахерский сервис");
+		service.setPrice(10.00);
+		Service service2= new Service();
+		service2.setServiceName("Косметологический сервис");
+		service2.setPrice(20.00);
+		Service service3= new Service();
+		service3.setServiceName("Маникюрный сервис");
+		service3.setPrice(20.00);
+		Service service4= new Service();
+		service4.setServiceName("Массаж и SPA");
+		service4.setPrice(40.00);
+		Service service5= new Service();
+		service5.setServiceName("Солярий");
+		service5.setPrice(5.00);
+		serviceRepository.save(service);
+		serviceRepository.save(service2);
+		serviceRepository.save(service3);
+		serviceRepository.save(service4);
+		serviceRepository.save(service5);	
+	}
+}

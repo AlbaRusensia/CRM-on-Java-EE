@@ -1,0 +1,23 @@
+package com.example.crm.model;
+
+import java.sql.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "time")
+public class DateTime {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "time_id", unique = true, nullable = false)
+	private Long id;
+	@Column(name = "date")
+	private Date date;
+	@Column(name = "date")
+	private  time;
+}

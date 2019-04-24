@@ -1,0 +1,59 @@
+package com.example.crm.model;
+
+import javax.persistence.AssociationOverride;
+import javax.persistence.AssociationOverrides;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "magazin")
+@AssociationOverrides({ @AssociationOverride(name = "customerId", joinColumns = @JoinColumn(name = "customer_id")),
+		@AssociationOverride(name = "employeeId", joinColumns = @JoinColumn(name = "employee_id")) })
+public class Magazin {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "magazin_id", unique = true, nullable = false)
+	private Long id;
+	@Column(name = "treatment")
+	private Boolean treatment;
+	private Long customerId;
+	private Long employeeId;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Boolean getTreatment() {
+		return treatment;
+	}
+
+	public void setTreatment(Boolean treatment) {
+		this.treatment = treatment;
+	}
+
+	public Long getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(Long customerId) {
+		this.customerId = customerId;
+	}
+
+	public Long getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(Long employeeId) {
+		this.employeeId = employeeId;
+	}
+
+}

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: georgia;
+    src: url('../fonts/georgia.ttf');
+} 
+
+@font-face {
+    font-family: Pompadur;
+    src: url('../fonts/Pompadur.ttf');
+} 
+@font-face {
+    font-family: times-new-roman;
+    src: url('../fonts/times-new-roman.ttf');
+} 
+
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url('../fonts/Raleway-Regular.ttf');
+} 
+
+thin
+@font-face {
+    font-family: AvanteLtNr;
+    src: url('../fonts/AvanteLtNr.ttf');
+} 

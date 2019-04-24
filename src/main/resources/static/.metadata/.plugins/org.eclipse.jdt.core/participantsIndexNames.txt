@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+D:\Итоговый проект\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1164227394.index
+\SpringBoot2\src\main\java
+D:\Итоговый проект\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4227917122.index
+\CRM\src\main\java
